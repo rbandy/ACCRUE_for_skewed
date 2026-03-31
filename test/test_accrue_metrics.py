@@ -1,7 +1,6 @@
 import math
 import pytest
-
-torch = pytest.importorskip("torch")
+import torch
 
 from src.asymmLaplace_accrue_torch import (
     CRPS_asymmLaplace_ana_torch,

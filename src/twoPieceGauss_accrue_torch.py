@@ -108,8 +108,8 @@ def analytical_RS_torch(error, sigma1, sigma2):
         emp_eta: sorted array of CDF transforms 
                  TPG.CDF(m=error, sigma1, sigma2)
     output:
-    1/N * \sum_{i=1}^N (emp_eta[i]^2) 
-    + 1/N^2 *  \sum_{i=1}^N (i^2 * (emp_eta[i+1]-emp_eta[i]))
+    1/N * \\sum_{i=1}^N (emp_eta[i]^2) 
+    + 1/N^2 *  \\sum_{i=1}^N (i^2 * (emp_eta[i+1]-emp_eta[i]))
     """
     emp_eta = calc_eta_torch(error, sigma1, sigma2)
 

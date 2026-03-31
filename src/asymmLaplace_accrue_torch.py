@@ -86,8 +86,8 @@ def analytical_RS_torch(error, kappa, lam):
         emp_eta: sorted array of CDF transforms 
                  AL.CDF(m=error, kappa=curr_kappa, lambda=curr_lam)
     output: removing -2/3 constant!!
-    1/N * \sum_{i=1}^N (emp_eta[i]^2) 
-    + 1/N^2 *  \sum_{i=1}^N (i^2 * (eta[i+1]-eta[i]))
+    1/N * \\sum_{i=1}^N (emp_eta[i]^2) 
+    + 1/N^2 *  \\sum_{i=1}^N (i^2 * (eta[i+1]-eta[i]))
     """
     eta = torch.zeros(len(error))
     # kappa=torch.tensor(kappa)
